@@ -2,16 +2,37 @@
   <!DOCTYPE html>
   <html>
     <head>
+
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro:700" rel="stylesheet">
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- from fullpagejs -->
+      <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
       <link type="text/css" rel="stylesheet" href="css/css.css" />
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+      <!--from fulpagejs -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+      <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+      <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
     </head>
 
     <body class=''>
@@ -30,21 +51,28 @@
        </nav>
      </div>
 
+     <!-- <div id="fullpage">
+ 	<div class="section " id="section0">
+ 		<h1>fullPage.js</h1>
+ 		 <input type="hidden" name="id" value="1" />
+ 		<p>Create Beautiful Fullscreen Scrolling Websites</p>
+ 		<img src="imgs/fullPage.png" alt="fullPage" />
+ 	</div> -->
 
-
-      <div class="top" id='top'>
-        <div class='inside'>
+      <div class="top" id="fullpage">
+        <div class='inside' id="section0">
           <h1> Heart Responder</h1>
+          <input type="hidden" name="id" value="1" />
           <h2> Find your way, save a life </h2>
           <a class="waves-effect waves-light btn-large indigo darken-4 topbutton"> Visit Our app</a>
         </div>
       </div>
 
-<div class='med' id='second'>
+<div class='med ' id='second'>
 
-<div class="row ">
+<div class="boxes ">
 
-    <div class="col s4 ">
+    <div class="box ">
       <i class="large material-icons ">question_answer</i>
       <h5 >Why is this important?</h5>
 
@@ -60,7 +88,7 @@
     That is what we re here for. To help people find their way, in a easy and clam way.
 
     </p>    </div>
-    <div class="col s4">
+    <div class="box">
       <i class="large material-icons">add_alert</i>
       <h5 >How can you help?</h5>
 
@@ -76,7 +104,7 @@
 
       </ul>
     </p>    </div>
-    <div class="col s4">
+    <div class="box ">
       <i class="large material-icons">live_help</i>
       <h5 >What it is Sudden Cardiac Arrest</h5>
 
@@ -109,7 +137,6 @@
 </div>
 
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/js.js"></script>
 

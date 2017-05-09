@@ -54,7 +54,7 @@ color: white;
 }
 .topbutton {
   margin-left: 33%;
-  
+
 }
 .med {
   color: darkBlue;
@@ -62,5 +62,18 @@ color: white;
 }
 i {
   margin-left: 33%;
+
+}
+
+.boxes {
+  display: flex;
+  align-items:  flex-start;
+  justify-content: space-around;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+}
+.box {
+  width: 25vw;
 
 }
