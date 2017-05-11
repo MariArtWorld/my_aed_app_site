@@ -4,17 +4,20 @@ body{
 }
 
 h1 {
+margin-left: 5vw;
 font-size: 10vh;
 }
 h2{
+  margin-left: 5vw;
   font-size: 8vh;
 }
 h5{
   text-align: center;
-
+  font-size: 3vh;
 }
 p {
   text-align: justify;
+  font-size: 2vh;
 }
 
 /*.slider {
@@ -33,8 +36,8 @@ p {
 }*/
 
 nav{
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .top {
   min-height: 100vh;
@@ -48,7 +51,6 @@ nav{
 }
 
 .inside {
-margin-left: 8vw;
 font-weight: bold;
 color: white;
 }
@@ -57,10 +59,12 @@ color: white;
 
 }
 .med {
-  color: darkBlue;
-  margin-top: 15vh;
+  /*color: darkBlue;*/
+
 }
 i {
+  color: rgb(0, 28, 73);
+  opacity: 0.5;
   margin-left: 33%;
 
 }
@@ -69,11 +73,17 @@ i {
   display: flex;
   align-items:  flex-start;
   justify-content: space-around;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 
 }
 .box {
-  width: 25vw;
+  width: 20vw;
 
+}
+.s1 {
+  background-image: url(../pics/catalog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: top;
 }
