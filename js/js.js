@@ -4,5 +4,4 @@ $(document).ready(function(){
      transition:600,
      height: 900
     });
-
   });
